@@ -1,0 +1,80 @@
+/* styling for different classes, id's and elements */
+@font-face {
+  font-family: "Century Gothic";
+  src: url("CenturyGothic.ttrf");
+}
+
+@font-face {
+  font-family: "Hybi11-Amigo ExtraBold";
+  src: url("Hybi11 Amigo Extra Bold.ttrf");
+}
+
+/* whole page styling */
+body {
+  margin: 0px;
+  /* font-family:"Century Gothic"; */
+}
+
+/* header of the page */
+.header {
+  font-size: 48px;
+  color: white;
+  width: inherit;
+  font-family: "Century Gothic";
+  background-color: #3399CC;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 10px 0px 17px 20px;
+  height: 66px;
+  font-weight: 400;
+}
+
+/* navigation bar styling */
+.navbar {
+  font-size: 15px;
+  font-weight: bold;
+  height: 30px;
+  background-color: #333333;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar>.options>.option:hover {
+  border-left: 3px solid white !important;
+  background-color: #ff9900;
+  cursor: pointer;
+}
+.present{
+  background-color: rgb(255,153,0,0.5);
+}
+/* styling for navigation options */
+.navbar>.options {
+  padding-left: 8px;
+  padding-top: 5px;
+  font-weight: 600;
+}
+
+/* styling for option in navigation menu */
+.navbar>.options>.option {
+  padding: 5px 14px;
+  display: inline;
+  border-left: 3px solid #333333;
+  color: white;
+  text-decoration: none;
+}
+
+.nav:hover {
+  border: 1px solid white;
+}
+
+/* image in navigation bar */
+.navimg {
+  height: 24px;
+  padding: 3px 25px 0px 0px;
+}
+
+a {
+  height: 30px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task 4</title>
+    <!-- linking css file -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Century Gothic">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="validation.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="addAddress.css">
+    <script src="services.js"></script>
+    <script src="Model.js"></script>
+    <!-- <script src="addAddress.js"></script> -->
+</head>
+
+<body>
+    <!-- Technovert heading -->
+    <div class='header'>ADDRESS BOOK</div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="options">
+            <div class="option" id="home">HOME</div>
+            <div class="option" id="add">+ ADD</div>
+        </div>
+
+        <div>
+            <!-- icon -->
+            <img class="navimg" src="img.png" alt="img not found">
+        </div>
+    </div>
+    <div class="container">
+        <div class="contacts-pane">
+            <div class="pane-heading">CONTACTS</div>
+            <div class="contacts">
+            </div>
+        </div>
+        <div class="contact-details">
+            <div class="details-header">
+                <div class="details-heading name"></div>
+                <div class="options">
+                    <button class="option" onclick="showEditForm()"><i class="fa fa-edit"></i> Edit</button>
+                    <button class="option" onclick="deleteContact()"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+            </div>
+            <div class="details">
+                <div class="table">
+                    <div class="tr">
+                        <div class="td">Email</div>
+                        <div class="td email"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">Phone</div>
+                        <div class="td phone"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">Landline</div>
+                        <div class="td landLine"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">Website</div>
+                        <div class="td website"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">Address</div>
+                        <div class="td address"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <form class="form" action="#" onsubmit="addContact()">
+                <div id="error"></div>
+                <div class="table">
+                    <div class="tr">
+                        <div class="td">Name :</div>
+                        <div class="td"><input type="text" class="name" placeholder="Enter your name"><span class="req">*</span> </div>
+                        <div id="nameError"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">Email :</div>
+                        <div class="td"><input type="text" placeholder="Enter email address" class="email"><span class="req">*</span> </div>
+                        <div id="mailError"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">Phone :</div>
+                        <div class="td"><input type="text" placeholder="Enter phone number" class="phone"><span class="req">*</span> </div>
+                        <div id="phoneError"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">Landline :</div>
+                        <div class="td"><input type="text" placeholder="Enter landline number" class="landLine"></div>
+                        <div id="landLineError"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">Website :</div>
+                        <div class="td"><input type="text" placeholder="Enter website address" class="website"><span class="req">*</span> </div>
+                        <div id="websiteError"></div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">Address :</div>
+                        <div class="td"><textarea rows="4" cols="22" class="address" placeholder="Enter address"></textarea></div>
+                        <div id="addressError"></div>
+                    </div>
+
+                </div>
+                <input type="button" value="Save" onclick="addContact()">
+                <input type="button" value="Cancel" onclick="cancelAction()">
+        </div>
+    </div>
+</body>
+
+</html>

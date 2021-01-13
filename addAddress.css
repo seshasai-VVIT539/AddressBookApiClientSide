@@ -1,0 +1,66 @@
+/* whole body */
+.container {
+  margin: 2% 0 0 4%;
+  font-family: 'Century Gothic';
+  word-spacing: 2px;
+}
+
+/* main erro at top of form */
+.error {
+  font-size: 14px;
+  color: red;
+}
+
+/* form element */
+.form {
+  margin: 10px 0 50px 10px;
+  width: fit-content;
+  opacity: 0.9;
+  font-size: 14px;
+  padding: 10px;
+  box-shadow: 5px 5px 20px grey;
+}
+
+/* making div a table */
+.table {
+  display: table;
+}
+
+/* making div a table row */
+.tr {
+  display: table-row;
+}
+
+/* div as a table cell */
+.td {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+#nameError, #mailError, #phoneError, #landLineError, #websiteError, #addressError {
+  color: red;
+  padding-top: 5px;
+}
+
+#error {
+  font-size: 16px;
+}
+
+input, textarea {
+  border-style: inset;
+  border-width: 2px;
+  border-right-color: rgb(0, 0, 0, 0.2);
+  border-bottom-color: rgb(0, 0, 0, 0.2);
+}
+
+/* website address textbox */
+#websiteAddress {
+  margin-left: 10px;
+}
+
+/* options for contact by option */
+.contact-by {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
